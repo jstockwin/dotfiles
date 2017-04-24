@@ -1,5 +1,22 @@
 " Stolen from: https://github.com/samwhitehall/.vimrc
 "
+
+" ---
+" Pathogen (package manager)
+" ---
+call pathogen#infect()
+call pathogen#helptags()
+
+
+" ---
+" Remappings
+" ---
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <leader>n :NERDTreeToggle<cr>
+
 " ---
 " Utterly sensible defaults
 " ---

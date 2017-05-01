@@ -15,6 +15,21 @@ call pathogen#helptags()
 " git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 
 " ---
+" Disable arrow keys (at least while learning...)
+"
+" Disable Arrow keys in Escape mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" Disable Arrow keys in Insert mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" ---
 " NERDTree Remappings
 " ---
 

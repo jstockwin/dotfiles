@@ -1,5 +1,5 @@
-" Stolen from: https://github.com/samwhitehall/.vimrc
-"
+" Initially stolen from: https://github.com/samwhitehall/.vimrc
+" but significantly edited since
 
 " ---
 " Pathogen (package manager)

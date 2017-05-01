@@ -9,6 +9,7 @@ call pathogen#helptags()
 
 " git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 " git clone https://github.com/scrooloose/nerdtree ~/.vim/bundle/nerdtree
+" git clone https://github.com/jistr/vim-nerdtree-tabs.git ~/.vim/bundle/nerdtree-tabs
 " git clone git://github.com/ntpeters/vim-better-whitespace.git ~/.vim/bundle/vim-better-whitespace
 " git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 " git clone https://github.com/airblade/vim-gitgutter ~/.vim/bundle/gitgutter

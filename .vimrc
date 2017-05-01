@@ -28,7 +28,7 @@ nnoremap <leader>n :NERDTreeToggle<cr>
 set number              " show line numbers in left column
 set ttyfast             " faster response to keypresses
 set title               " terminal title updated depending on file in buffer
-
+set backspace=2         " make backspace work like most other apps
 syntax enable           " enable syntax highlighting
 
 

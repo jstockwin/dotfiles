@@ -36,12 +36,14 @@ set hlsearch            " highlight search matches
 nnoremap <leader><space> :noh<cr>
                         " ^ remove highlights with leader (\) + space
 
+" Use relative line numbers
+set relativenumber
 
 " ---
 " Line wrapping
 " ---
 set wrap                " display long line wraps, but linebreaks added manually
-set textwidth=79        " wrap after column 79 (i.e. 
+set textwidth=79        " wrap after column 79 (i.e.
 set colorcolumn=80
 
 

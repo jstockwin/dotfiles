@@ -7,6 +7,9 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+" git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+" git clone https://github.com/scrooloose/nerdtree ~/.vim/bundle/nerdtree
+" git clone git://github.com/ntpeters/vim-better-whitespace.git ~/.vim/bundle/vim-better-whitespace
 
 " ---
 " Remappings
@@ -59,3 +62,8 @@ set autoindent
 set background=dark     " comment out if you use a light terminal colour scheme
 highlight LineNr ctermfg=DarkGrey
                         " ^ use less bright line numbers with dark colour scheme
+
+" ---
+" Configure airline
+" ---
+set laststatus=2

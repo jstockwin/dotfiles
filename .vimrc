@@ -14,13 +14,30 @@ call pathogen#helptags()
 " git clone https://github.com/airblade/vim-gitgutter ~/.vim/bundle/gitgutter
 
 " ---
-" Remappings
+" NERDTree Remappings
 " ---
+
+" Also useful is this:
+" https://github.com/scrooloose/nerdtree/issues/439
+
+
+" Move between split windows easily
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-nnoremap <leader>n :NERDTreeToggle<cr>
+nnoremap <leader>n :NERDTreeToggle<cr> " Open NERDTree easily
+let NERDTreeQuitOnOpen=1 " Close tree when file chosen
+let NERDTreeShowHidden=1 " Show hidden files in tree
+" Switch between tabs easily
+nnoremap <C-N> gT
+nnoremap <C-M> gt
+
+" ---
+" Make it easy to update/reload .vimrc
+" ---
+:nmap <Leader>s :source ~/.vimrc<cr>
+:nmap <Leader>v :tabedit ~/.vimrc<cr>
 
 " ---
 " Utterly sensible defaults

@@ -24,6 +24,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'vim-airline/vim-airline'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -93,7 +94,6 @@ set title               " terminal title updated depending on file in buffer
 set backspace=2         " make backspace work like most other apps
 syntax on           " enable syntax highlighting
 set showcmd
-:nmap <leader>/ :nohlsearch<cr>
 
 
 " Searching
@@ -101,6 +101,7 @@ set smartcase           " case insensitive only if search term all lowercase
 set hlsearch            " highlight search matches
 nnoremap <leader><space> :noh<cr>
                         " ^ remove highlights with leader (\) + space
+:nmap <leader>/ :let @/=""<cr>
 
 " Use relative line numbers
 set relativenumber
@@ -130,6 +131,7 @@ set autoindent
 set background=dark     " comment out if you use a light terminal colour scheme
 highlight LineNr ctermfg=DarkGrey
                         " ^ use less bright line numbers with dark colour scheme
+colorscheme solarized
 
 " ---
 " Configure plugins

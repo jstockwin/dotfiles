@@ -114,6 +114,12 @@ set wrap                " display long line wraps, but linebreaks added manually
 set textwidth=79        " wrap after column 79 (i.e.
 set colorcolumn=80
 
+" ---
+" Copy/paste using system clipboard
+" ---
+nmap <leader>y "+y
+vmap <leader>y "+y
+nmap <leader>p "+p
 
 " ---
 " Tabbing (assuming you want spaces, and 4 spaces at that)

@@ -2,17 +2,46 @@
 " but significantly edited since
 
 " ---
-" Pathogen (package manager)
+" Vundle (package manager)
 " ---
-call pathogen#infect()
-call pathogen#helptags()
 
-" git clone git://github.com/ntpeters/vim-better-whitespace.git ~/.vim/bundle/vim-better-whitespace
-" git clone https://github.com/airblade/vim-gitgutter ~/.vim/bundle/gitgutter
-" git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
-" git clone https://github.com/jistr/vim-nerdtree-tabs.git ~/.vim/bundle/nerdtree-tabs
-" git clone https://github.com/scrooloose/nerdtree ~/.vim/bundle/nerdtree
-" git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" List plugins:
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'vim-airline/vim-airline'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+
 
 " ---
 " Disable arrow keys (at least while learning...)
@@ -62,7 +91,7 @@ set number              " show line numbers in left column
 set ttyfast             " faster response to keypresses
 set title               " terminal title updated depending on file in buffer
 set backspace=2         " make backspace work like most other apps
-syntax enable           " enable syntax highlighting
+syntax on           " enable syntax highlighting
 
 
 " Searching

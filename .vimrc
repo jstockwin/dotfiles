@@ -41,7 +41,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-
+let mapleader=","
 
 " ---
 " Disable arrow keys (at least while learning...)
@@ -92,8 +92,8 @@ set ttyfast             " faster response to keypresses
 set title               " terminal title updated depending on file in buffer
 set backspace=2         " make backspace work like most other apps
 syntax on           " enable syntax highlighting
-let mapleader=","
 set showcmd
+:nmap <leader>/ :nohlsearch<cr>
 
 
 " Searching

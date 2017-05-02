@@ -132,6 +132,7 @@ highlight LineNr ctermfg=DarkGrey
                         " ^ use less bright line numbers with dark colour scheme
 
 " ---
-" Configure airline
+" Configure plugins
 " ---
-set laststatus=2
+set laststatus=2 " for airline
+set updatetime=250 " for gitgutter

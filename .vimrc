@@ -121,6 +121,8 @@ set colorcolumn=80
 nmap <leader>y "+y
 vmap <leader>y "+y
 nmap <leader>p "+p
+" Make F2 toffle paste mode
+set pastetoggle=<F2>
 
 " ---
 " Tabbing (assuming you want spaces, and 4 spaces at that)

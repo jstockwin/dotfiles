@@ -86,3 +86,6 @@ export DEFAULT_USER=jake
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias reboot-windows="sudo grub-reboot 2 && reboot"
+
+export NVM_DIR="/home/jake/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

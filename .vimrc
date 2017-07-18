@@ -141,7 +141,7 @@ set autoindent
 set background=dark     " comment out if you use a light terminal colour scheme
 highlight LineNr ctermfg=DarkGrey
                         " ^ use less bright line numbers with dark colour scheme
-colorscheme solarized
+colorscheme ron
 
 " ---
 " Configure plugins

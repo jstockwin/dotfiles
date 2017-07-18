@@ -89,3 +89,8 @@ alias reboot-windows="sudo grub-reboot 2 && reboot"
 
 export NVM_DIR="/home/jake/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Docker things:
+
+alias dcb="docker-compose build"
+alias dcr="docker-compose run --rm"

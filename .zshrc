@@ -94,3 +94,8 @@ export NVM_DIR="/home/jake/.nvm"
 
 alias dcb="docker-compose build"
 alias dcr="docker-compose run --rm"
+alias dcu="docker-compose up"
+alias aws-login="$(aws ecr get-login --region us-east-1 | sed -e 's/-e none//g')"
+alias vimrc="vim ~/Dev/dotfiles/.vimrc"
+alias zshrc="vim ~/Dev/dotfiles/.zshrc"
+alias dotfiles="cd ~/Dev/dotfiles"

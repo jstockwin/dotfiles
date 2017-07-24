@@ -100,3 +100,12 @@ alias vimrc="vim ~/Dev/dotfiles/.vimrc"
 alias zshrc="vim ~/Dev/dotfiles/.zshrc"
 alias dotfiles="cd ~/Dev/dotfiles"
 alias ag="/usr/bin/ag"
+
+
+# Addition PATH variables
+export PATH=/usr/bin/robomongo/bin:$PATH
+
+# Setting of terminal title
+precmd () { print -Pn "\e]0;$TITLE\a" }
+title() { export TITLE="$*" }
+DISABLE_AUTO_TITLE="true"

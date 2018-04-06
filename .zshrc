@@ -100,6 +100,7 @@ alias vimrc="vim ~/Dev/dotfiles/.vimrc"
 alias zshrc="vim ~/Dev/dotfiles/.zshrc"
 alias dotfiles="cd ~/Dev/dotfiles"
 alias ag="/usr/bin/ag"
+alias c="clear"
 
 
 # Addition PATH variables

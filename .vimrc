@@ -27,6 +27,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
 Plugin 'python-mode/python-mode'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -70,10 +71,6 @@ imap <right> <nop>
 
 
 " Move between split windows easily
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
 nnoremap <leader>n :NERDTreeToggle<cr> " Open NERDTree easily
 let NERDTreeQuitOnOpen=1 " Close tree when file chosen
 let NERDTreeShowHidden=1 " Show hidden files in tree

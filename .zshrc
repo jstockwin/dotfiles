@@ -110,3 +110,8 @@ export PATH=/usr/bin/robomongo/bin:$PATH
 precmd () { print -Pn "\e]0;$TITLE\a" }
 title() { export TITLE="$*" }
 DISABLE_AUTO_TITLE="true"
+
+alias mongo-tprod='docker inspect $(docker ps --filter name=mongodb-tprod -q) | grep "                    \"IPAddress\":"'
+alias mongo-tdev='docker inspect $(docker ps --filter name=mongodb-tdev -q) | grep "                    \"IPAddress\":"'
+alias mongo-bmprod='docker inspect $(docker ps --filter name=mongodb-bmprod -q) | grep "                    \"IPAddress\":"'
+alias mongo-bmdev='docker inspect $(docker ps --filter name=mongodb-bmdev -q) | grep "                    \"IPAddress\":"'
